@@ -42,3 +42,13 @@ public:
         return {a,b};
     }
 };
+
+
+// Number of Occurence of an element in a sorted array
+int countFreq(vector<int>& nums, int target) {
+        int n = nums.size();
+        int a = First(nums,n,target);
+        if(a==-1) return 0;
+        int b = Last(nums,n,target);
+        return (b-a+1);
+}
